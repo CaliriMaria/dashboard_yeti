@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Golos Text', sans-serif;
+    font-family: 'Proza Libre', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --primary: #55ff00
+}
+.primary{
+    color: #55ff00;
+}
+
+/*media queries */
+
+#desktop-button{
+    display: block;
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+    #desktop-button {
+        display: none;
+    }
+}
+
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 0px;
+}
+
+.aside{
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 30px;
+    right: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+    .aside {
+        display: none;
+    }
+}
+
+.input-search{
+    display: block;
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+    .input-search{
+        display: none;
+    }
+}
